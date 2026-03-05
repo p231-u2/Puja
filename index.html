@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgive Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
+
+<header>
+    <h1>To <span id="name">Your Name</span></h1>
+    <h2>I Am Truly Sorry</h2>
+    <p>Sometimes mistakes hurt the people we care about most...</p>
+</header>
+
+<div class="heart-container">
+    <div class="heart"></div>
+</div>
+
+<section class="message-section">
+    <div id="typewriter"></div>
+</section>
+
+<section class="reply-section">
+    <h3>Can You Forgive Me?</h3>
+    <button onclick="yesReply()">Yes 💙</button>
+    <button id="noBtn">No 💔</button>
+
+    <div id="replyMessage"></div>
+</section>
+
+<section class="gift-section" id="giftSection">
+    <div class="gift-box" onclick="openGift()">🎁</div>
+    <div id="giftMessage">You are precious to me forever ✨💙</div>
+</section>
+
+<footer>
+    Made with sincerity, regret and hope.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
